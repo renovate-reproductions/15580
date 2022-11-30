@@ -4,5 +4,12 @@
     "config:base",
     ":disableDependencyDashboard"
   ],
-  "rangeStrategy": "update-lockfile"
+  "packageRules": [
+    {
+      "matchManagers": [
+        "terraform"
+      ],
+      "rangeStrategy": "update-lockfile"
+    }
+  ]
 }
